@@ -1,6 +1,6 @@
+const { DefaultAzureCredential } = require("@azure/identity");
+const { ApiManagementClient } = require("@azure/arm-apimanagement");
 module.exports = async function (context, _myTimer) {
-    const { DefaultAzureCredential } = require("@azure/identity");
-    const { ApiManagementClient } = require("@azure/arm-apimanagement");
     const subscriptionId = process.env["AZURE_SUBSCRIPTION_ID"];
     const serviceName = process.env["SERVICE_NAME"];
     const resourceGroupName = process.env["RESOURCE_GROUP"];
